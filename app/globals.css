@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-slate-950 text-white antialiased;
+}
+
+.glass-panel {
+  @apply bg-white/10 backdrop-blur-xl border border-white/10 shadow-glass rounded-3xl;
+}
+
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at 10% 20%, rgba(110, 231, 183, 0.3), transparent 45%),
+    radial-gradient(circle at 90% 10%, rgba(59, 130, 246, 0.2), transparent 45%),
+    radial-gradient(circle at 50% 80%, rgba(110, 231, 183, 0.25), transparent 45%);
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-semibold tracking-tight text-white mb-6;
+}
+
+.section-subtitle {
+  @apply text-lg text-white/70 max-w-3xl;
+}
+
+.container-tight {
+  @apply max-w-6xl mx-auto px-4;
+}
